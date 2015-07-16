@@ -1,9 +1,12 @@
 Bluemix Selfie Drone
 ================================================================================
 
-The [drone-selfie](https://github.com/IBM-Bluemix/drone-selfie) project contains an application to take selfies via a [Parrot AR Drone 2.0](http://ardrone2.parrot.com/). The application has been implemented via [IBM Bluemix](https://bluemix.net/) and the [Internet of Things](https://console.ng.bluemix.net/catalog/internet-of-things/) service. Via navigation buttons the drone can be navigated and pictures can be taken. The pictures are stored in a [Cloudant NoSQL database](https://console.ng.bluemix.net/catalog/cloudant-nosql-db/) for later review. The [Alchemy Face Recognition API](http://www.alchemyapi.com/products/alchemyvision/face-detection) is used to find the faces on the pictures and the portraits are cropped out. Users can pick full pictures and portraits and tweet them. Open the [Selfie Drone screenshot](https://raw.githubusercontent.com/IBM-Bluemix/drone-selfie/master/pictures/selfie-drone1.jpg) to see the user interface.
+The [drone-selfie](https://github.com/IBM-Bluemix/drone-selfie) project contains an application to take selfies via a [Parrot AR Drone 2.0](http://ardrone2.parrot.com/). Via navigation buttons in a web application the drone can be steered and a series of pictures can be taken. The pictures are stored for later review. Additionally faces on the pictures are recognized and portraits are cropped out which can be tweeted. Check out the screenshot of the [web application](https://raw.githubusercontent.com/IBM-Bluemix/drone-selfie/master/pictures/selfie-drone1.jpg).
 
 ![alt text](https://raw.githubusercontent.com/IBM-Bluemix/drone-selfie/master/pictures/selfie-drone2.jpg "Bluemix Selfie Drone")
+
+The application has been implemented via [IBM Bluemix](https://bluemix.net/) and the [Internet of Things](https://console.ng.bluemix.net/catalog/internet-of-things/) service. The pictures are stored in a <[Cloudant NoSQL database](https://console.ng.bluemix.net/catalog/cloudant-nosql-db/). The [Alchemy Face Recognition API](http://www.alchemyapi.com/products/alchemyvision/face-detection) is used to find the faces.
+
 Author: Niklas Heidloff [@nheidloff](http://twitter.com/nheidloff)
 
 Note: This application requires certain hardware and software. Read the documentation of the [Parrot Drone Sample](https://github.com/IBM-Bluemix/parrot-sample), set up the local Node.js application and follow the steps to configure your device with the Internet of Things service.
@@ -138,3 +141,9 @@ You can deploy your changes by building the war file, e.g. via export function i
 > cf set-env drone-selfie JBP_CONFIG_LIBERTY "app_archive: {features: [websocket-1.1, servlet-3.1]}"
 
 > cf restage drone-selfie
+
+
+Screenshot of the Application
+================================================================================
+
+![alt text](https://raw.githubusercontent.com/IBM-Bluemix/drone-selfie/master/pictures/selfie-drone1.jpg "Bluemix Selfie Drone")

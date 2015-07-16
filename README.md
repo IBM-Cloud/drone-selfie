@@ -5,7 +5,7 @@ The [drone-selfie](https://github.com/IBM-Bluemix/drone-selfie) project contains
 
 ![alt text](https://raw.githubusercontent.com/IBM-Bluemix/drone-selfie/master/pictures/selfie-drone2.jpg "Bluemix Selfie Drone")
 
-The application has been implemented via [IBM Bluemix](https://bluemix.net/) and the [Internet of Things](https://console.ng.bluemix.net/catalog/internet-of-things/) service. The pictures are stored in a <[Cloudant NoSQL database](https://console.ng.bluemix.net/catalog/cloudant-nosql-db/). The [Alchemy Face Recognition API](http://www.alchemyapi.com/products/alchemyvision/face-detection) is used to find the faces.
+The application has been implemented via [IBM Bluemix](https://bluemix.net/) and the [Internet of Things](https://console.ng.bluemix.net/catalog/internet-of-things/) service. The pictures are stored in a [Cloudant NoSQL database](https://console.ng.bluemix.net/catalog/cloudant-nosql-db/). The [Alchemy Face Recognition API](http://www.alchemyapi.com/products/alchemyvision/face-detection) is used to find the faces.
 
 Author: Niklas Heidloff [@nheidloff](http://twitter.com/nheidloff)
 

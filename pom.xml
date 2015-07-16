@@ -69,6 +69,7 @@
 								<JBP_CONFIG_LIBERTY>app_archive: {features: [websocket-1.1,
 									servlet-3.1]}</JBP_CONFIG_LIBERTY>
 							</env>
+							<services_autoconfig_excludes>cloudantNoSQLDB=all</services_autoconfig_excludes>
 							<services>
 								<service>
 									<name>${APPNAME}-cloudant</name>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="droneSelfieUiApp" lang="en">
+<head>
+<title>Drone Selfie built via IBM Bluemix</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="bower/angular/angular.min.js"></script>
+<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower/angular-animate/angular-animate.min.js"></script>
+<script src="bower/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower/angular-resource/angular-resource.min.js"></script>
+<script src="bower/angular-route/angular-route.min.js"></script>
+<script src="bower/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower/angular-touch/angular-touch.min.js"></script>
+<script src="bower/angularjs-toaster/toaster.min.js"></script>
+<script src="bower/angular-websocket/angular-websocket.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+
+<link rel="stylesheet"
+	href="bower/bootstrap/dist/css/bootstrap.min.css" />
+<link href="css/ds.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="MainCtrl">
+	<dsnavbar></dsnavbar>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+
+				<h2>Navigation Controls</h2>
+
+				<div class="row marketing">
+					<toaster-container
+						toaster-options="{'position-class': 'toast-top-full-width'}"></toaster-container>
+					<button type="button" ng-click="takeOff()"
+						class="btn btn-success">Take Off</button>
+					<button type="button" ng-click="land()"
+						class="btn btn-danger">Land</button>
+					<p></p>
+					<button type="button" ng-click="rotatec()"
+						class="btn btn-warning">Rotate clockwise</button>
+					<button type="button" ng-click="rotatecc()"
+						class="btn btn-warning">Rotate counter clockwise</button>
+					<button type="button" ng-click="up()"
+						class="btn btn-warning">Up</button>
+					<button type="button" ng-click="down()"
+						class="btn btn-warning">Down</button>
+					<p></p>
+					<button type="button" ng-click="takePicture()"
+						class="btn btn-primary">Take Picture</button>
+				</div>
+				
+				<div ng-show="myData.collection.length > 0">
+					<h2 style="margin-top: 40px">Full Pictures</h2>
+				</div>
+				<ul>
+					<li ng-repeat="data in myData.collection"><img
+						ng-src="{{data}}" alt="Description" />
+						<button type="button" ng-click="tweet('{{data}}')"
+							class="btn btn-success">Tweet</button>
+						<button type="button" ng-click="remove('{{data}}')"
+							class="btn btn-danger">Remove</button></li>
+				</ul>
+				
+				<div ng-show="myData.collection2.length > 0">
+					<h2 style="margin-top: 40px">Portraits</h2>
+				</div>
+				<ul>
+					<li ng-repeat="data2 in myData.collection2"><img
+						ng-src="{{data2}}" alt="Description" />
+						<button type="button" ng-click="tweet('{{data2}}')"
+							class="btn btn-success">Tweet</button>
+						<button type="button" ng-click="remove2('{{data2}}')"
+							class="btn btn-danger">Remove</button></li>
+				</ul>
+				<p></p>
+			</div>
+			<div class="col-lg-3">
+				<dsinfo></dsinfo>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

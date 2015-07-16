@@ -1,0 +1,83 @@
+Drone Selfie
+https://github.com/IBM-Bluemix/drone-selfie
+Copyright IBM Corp. 2015
+
+
+Apache Wink - version 1.4
+http://wink.apache.org/
+Available under Apache license v2: http://maven.apache.org/license.html
+- wink-server
+- wink-json4j
+- wink-client
+- wink-jackson-provider
+- wink-component-test-support
+
+
+Apache HttpComponents - version 4.3.1
+http://hc.apache.org/
+Available under Apache license v2: http://www.apache.org/licenses/
+
+
+SLF4J - version 1.7.7
+http://www.slf4j.org/
+Available under MIT license: http://www.slf4j.org/license.html
+
+
+Ektorp - version 1.4.2
+http://ektorp.org/
+Available under Apache license v2: https://github.com/helun/Ektorp/blob/master/license.txt
+
+
+google-json - version 2.2.4
+https://code.google.com/p/google-gson
+Available under Apache license v2: http://www.apache.org/licenses/LICENSE-2.0
+
+
+twitter4j - version 4.0.2
+https://github.com/yusuke/twitter4j
+Available under Apache license v2: https://github.com/yusuke/twitter4j/blob/master/LICENSE.txt
+
+
+Eclipse Paho
+https://projects.eclipse.org/projects/technology.paho
+Available under EPL: https://projects.eclipse.org/content/eclipse-public-license-1.0
+
+
+JavaXT
+http://www.javaxt.com/
+Available under MIT: http://www.javaxt.com/downloads/javaxt-core/LICENSE.TXT
+
+
+AngularJS
+https://angularjs.org
+Available under MIT license: https://github.com/angular/angular.js/blob/master/LICENSE
+
+
+AngularJS plugins
+https://www.npmjs.com/package/angular-animate
+https://www.npmjs.com/package/angular-sanitize
+https://www.npmjs.com/package/angular-cookies
+https://www.npmjs.com/package/angular-resource
+https://www.npmjs.com/package/angular-route
+https://www.npmjs.com/package/angular-touch
+Available under MIT
+
+
+angular-websocket
+https://github.com/gdi2290/angular-websocket
+Available under MIT: https://github.com/gdi2290/angular-websocket/blob/master/LICENSE
+
+
+AngularJS-Toaster
+https://github.com/jirikavi/AngularJS-Toaster
+Available under MIT: https://github.com/jirikavi/AngularJS-Toaster/blob/master/LICENSE
+
+
+jQuery
+http://jquery.com/
+Available under MIT license: https://jquery.org/license/
+
+
+Bootstrap
+http://getbootstrap.com/
+Available under Apache license v2: http://www.apache.org/licenses/

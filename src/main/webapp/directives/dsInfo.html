@@ -1,0 +1,35 @@
+<div>
+<div class="well">			
+	<h4>About</h4>
+	<p>
+	This application allows taking selfies with a <a href="http://ardrone2.parrot.com/">Parrot AR Drone 2.0</a>. 
+	</p>
+	<img alt="" src="parrot.png">
+	<p></p>
+	<p>
+	The application has been implemented via <a href="https://bluemix.net">IBM Bluemix</a> and the <a href="https://console.ng.bluemix.net/catalog/internet-of-things/">Internet of Things</a> service.
+	</p>
+	<img alt="" src="bluemix.png"><p></p>
+	<p>
+	Via the navigation buttons the drone can be navigated and then pictures can be taken. 
+	</p>
+	<p>
+	The pictures are stored in a <a href="https://console.ng.bluemix.net/catalog/cloudant-nosql-db/">Cloudant NoSQL</a> database for later review. 
+	</p>
+	<p>
+	The <a href="http://www.alchemyapi.com/products/alchemyvision/face-detection">Alchemy Face Recognition API</a> is used to find the faces on the pictures and the portraits are cropped out.
+	</p>
+	<p><span class="glyphicon glyphicon-heart"></span> from <a href="http://www-01.ibm.com/software/ebusiness/jstart/">IBM Emerging Technologies</a></p>
+	<div  style="text-align: center;">	
+	</div>
+</div>
+<div class="well">			
+	<h4>Tweets</h4>
+	<p>
+	Users can pick full pictures and portraits and tweet them via <a href="https://twitter.com/bluedroneselfie">@BlueDroneSelfie</a>. In addition to the picture the following message is sent.
+	</p>
+	<p ng-controller="MainCtrl">
+	<textarea id="twittermessage" style="min-width: 240px;" ng-model="myText"></textarea>
+	</p>	
+</div>
+</div>
